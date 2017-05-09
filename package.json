@@ -1,0 +1,18 @@
+{
+  "name": "tsvtojson",
+  "version": "0.0.1",
+  "description": "tsv to json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tsvtojson"
+  ],
+  "repository":{
+  	"type":"git",
+  	"url":"https://github.com/AungMyoKyaw/tsvtojson.git"
+  },
+  "author": "Aung Myo Kyaw",
+  "license": "ISC"
+}
