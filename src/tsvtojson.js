@@ -12,9 +12,9 @@ function tsvtojson(filepath,headers){
 				} else {
 					let obj = {}
 					line.split('\t').forEach((value,index)=>{
-						obj[header[index]] = value;
+						value ? obj[header[index]] = value : '';
 					});
-					json.push(obj);
+					Object.keys(obj).length ? json.push(obj) : '';
 				}
 			});
 			resolve(json);

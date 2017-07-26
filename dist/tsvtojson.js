@@ -14,9 +14,9 @@ function tsvtojson(filepath, headers) {
 				} else {
 					var obj = {};
 					line.split('\t').forEach(function (value, index) {
-						obj[header[index]] = value;
+						value ? obj[header[index]] = value : '';
 					});
-					json.push(obj);
+					Object.keys(obj).length ? json.push(obj) : '';
 				}
 			});
 			resolve(json);
