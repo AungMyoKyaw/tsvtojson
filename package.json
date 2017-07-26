@@ -2,7 +2,7 @@
   "name": "tsvtojson",
   "version": "0.0.1",
   "description": "tsv to json",
-  "main": "dist/index.js",
+  "main": "dist/tsvtojson.js",
   "scripts": {
     "test": "gulp test",
     "build": "gulp"
