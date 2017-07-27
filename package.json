@@ -1,6 +1,6 @@
 {
   "name": "tsvtojson",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "tsv to json",
   "main": "dist/tsvtojson.js",
   "scripts": {
