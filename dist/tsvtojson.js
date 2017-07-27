@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 
-function tsvtojson(filepath, headers) {
+var tsvtojson = function tsvtojson(filepath, headers) {
 	return new Promise(function (resolve, reject) {
 		try {
 			var tsv = fs.readFileSync(filepath, 'utf8');
@@ -24,6 +24,6 @@ function tsvtojson(filepath, headers) {
 			reject(err);
 		}
 	});
-}
+};
 
 module.exports = tsvtojson;

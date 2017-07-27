@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-function tsvtojson(filepath,headers){
+const tsvtojson = (filepath,headers)=>{
 	return new Promise((resolve,reject)=>{
 		try{
 			let tsv = fs.readFileSync(filepath,'utf8');
