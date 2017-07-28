@@ -6,7 +6,7 @@
 [![contributions welcome][contri-badge]][contri-url]
 
 ## Installation
-```
+```shell
 npm install --save tsvtojson
 ```
 
