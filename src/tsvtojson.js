@@ -1,12 +1,13 @@
 const fs = require('fs');
 
-const tsvtojson = (filepath,headers)=>{
+const tsvtojson = (filepath,headers,splitString)=>{
 	return new Promise((resolve,reject)=>{
 		try{
 			let tsv = fs.readFileSync(filepath,'utf8');
 			let header = headers || [];
 			let json = [];
-			tsv.split('\n').forEach((line,index)=>{
+			let splitString = splitString || '\n'
+			tsv.split(splitString).forEach((line,index)=>{
 				if(!index && !header.length){
 					header = line.split('\t');
 				} else {
