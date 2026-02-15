@@ -1,18 +1,30 @@
 {
   "name": "tsvtojson",
   "version": "1.0.1",
-  "description": "tsv to json",
+  "description": "A simple and lightweight library to convert TSV (Tab-Separated Values) files to JSON",
   "main": "dist/tsvtojson.js",
   "scripts": {
     "test": "gulp test",
-    "build": "gulp"
+    "build": "gulp",
+    "lint": "prettier --check src/**/*.js test/**/*.js",
+    "format": "prettier --write src/**/*.js test/**/*.js"
   },
   "keywords": [
-    "tsvtojson"
+    "tsv",
+    "json",
+    "tsvtojson",
+    "converter",
+    "parser",
+    "tab-separated",
+    "csv"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/AungMyoKyaw/tsvtojson.git"
+  },
+  "homepage": "https://github.com/AungMyoKyaw/tsvtojson#readme",
+  "bugs": {
+    "url": "https://github.com/AungMyoKyaw/tsvtojson/issues"
   },
   "author": "Aung Myo Kyaw",
   "license": "MIT",
@@ -22,5 +34,11 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-mocha": "^4.3.1"
-  }
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "files": [
+    "dist"
+  ]
 }
